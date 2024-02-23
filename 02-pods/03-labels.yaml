@@ -3,9 +3,9 @@ kind: Pod
 metadata:
   name: labels-demo
   #namespace: roboshop
-labels:
-  Training: aws
-  Duration: "100hrs"
+  labels:
+    course: DevOps
+    Trainer: "SivakumarReddy"
 spec:
   containers:
   - name: hello-pod
