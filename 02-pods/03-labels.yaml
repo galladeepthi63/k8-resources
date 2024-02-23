@@ -1,0 +1,15 @@
+apiVersion:
+kind: Pod
+metadata:
+  name: labels-demo
+  #namespace: roboshop
+labels:
+  Training: aws
+  Duration: 100hrs
+spec:
+  containers:
+  - name: hello-pod
+    image: nginx
+    ports:
+    - containerPort: 80
+
