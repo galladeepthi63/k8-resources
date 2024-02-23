@@ -6,11 +6,11 @@ metadata:
 spec:
   # list of containers
   containers:
-  - name: hello-pod
+  - name: nginx
     image: nginx
     ports: 
     - containerPort: 80
   - name: almalinux
     image: almalinux:8
     command: ["sleep", "300"]
-    
+
