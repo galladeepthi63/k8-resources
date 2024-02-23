@@ -4,7 +4,7 @@ metadata:
   name: labels-demo
   #namespace: roboshop
 labels:
-  Training: "aws"
+  Training: aws
   Duration: "100hrs"
 spec:
   containers:
