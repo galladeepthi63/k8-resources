@@ -1,0 +1,15 @@
+apiVersion:
+kind: Pod
+metadata:
+  name: multi-containers
+  namespace: roboshop
+spec:
+  containers:
+  - name: sample-pod 
+    image: nginx
+    ports:
+      containerPort: 80
+  - name: test-pod 
+    image: almalinux
+    command: ["sleep", "300"]
+  
