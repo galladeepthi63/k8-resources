@@ -3,9 +3,11 @@ kind: Pod
 metadata:
   name: config-pod
 spec:
+  # list of containers
   containers:
-  - name: config
+  - name: config-pod
     image: nginx
+    #here with this line port will not be opened, just for information
     ports:
     - containerPort: 80
     env:
@@ -20,7 +22,7 @@ spec:
           name: devops-config
           key: trainer
 
-
+          
 ---
 apiVersion: v1
 kind: Pod
@@ -37,6 +39,3 @@ spec:
     envFrom:
     - configMapRef:
         name: devops-config
-
-
-    
